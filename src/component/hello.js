@@ -1,5 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-ReactDOM.render(
-    <h1>Hello world</h1>,
-)
+const HelloWorld = (props)=>{
+    console.log(props);
+    return(
+        <div>{props.name} say:hello world</div>
+    )
+}
+export default HelloWorld
