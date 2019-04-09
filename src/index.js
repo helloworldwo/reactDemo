@@ -5,4 +5,4 @@ import HelloWorld from './component/hello'
 const root = document.querySelector('#root');
 
 render(
-    <HelloWorld name='Tom'></HelloWorld>,root);
+    <HelloWorld name1='Tom' name2='Jack'></HelloWorld>,root);

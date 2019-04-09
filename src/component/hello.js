@@ -1,14 +1,23 @@
 import React,{Component} from 'react';
 class HelloWorld extends Component{
+    state = {
+        switch:0,
+        name:this.props.name1
+    }
+
     clickHander=()=>{
-        console.log(this.props.name);
-        console.log(this.props);
+        console.log(this.refs);
+    }
+
+    refCallback=(elem)=>{
+        console.log(elem);
     }
 
     render(){
         return(
-            <div onClick={this.clickHander}>
-            {this.props.name} say:hello world
+            <div className='container' onClick={this.clickHander}>
+                <div ref='hello' className='hello'>Hello</div>
+                <div ref={this.refCallback} className='world'>world</div>
             </div>
         )
     }
