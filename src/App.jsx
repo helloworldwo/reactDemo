@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Button from './Component/Button';
-import Dialog from './Component/Dialog';
-import './style.css';
+import Dialog from './component/dialog';
+import Button from './component/mybutton';
+import './css/style.css';
 
 class App extends Component{
     state = {
@@ -41,12 +41,12 @@ class App extends Component{
     render(){
         const {loading,dialog,message} = this.state;
 
-        return({
+        return(
             <div className='app-wrap'>
-                <Button loading={loading} submit={this.submit}>Submit</Button>
+                <Button loading={loading} submit={this.submit}>提交</Button>
                 {dialog && <Dialog message={ message } close={ this.close } /> }
             </div>
-        })
+            )
     }
 }
 

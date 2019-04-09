@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 
 const Dialog = (props)=>{
     const {message,close} = props;
+    console.log(props);
     return(
         <div className='dialog-backdrop'>
             <div className='dialog-container'>
