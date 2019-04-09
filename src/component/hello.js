@@ -5,6 +5,11 @@ class HelloWorld extends Component{
         name:this.props.name1
     }
 
+    //left circle
+    componentDidMount(props){
+        console.log(this.refs);
+    }
+
     clickHander=()=>{
         console.log(this.refs);
     }
